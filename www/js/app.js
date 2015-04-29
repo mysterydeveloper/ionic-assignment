@@ -31,39 +31,13 @@ angular.module('Calorie Counter', ['ionic', 'Calorie Counter.controllers', 'Calo
 			}
 		}
 	})
-  .state('app.about', {
-    url: "/about",
-    views: {
-			'menuContent': {
-				templateUrl: "templates/about.html",
-				
-      }
-    }
-  })
-  .state('app.settings', {
-    url: "/settings",
-    views: {
-			'menuContent': {
-				templateUrl: "templates/settings.html",
-				controller: 'SettingsCtrl'
-      }
-    }
-  })
+ 
      .state('app.add', {
     url: "/add",
     views: {
 			'menuContent': {
 				templateUrl: "templates/addCal.html",
 				controller: 'HomeCtrl'
-      }
-    }
-  })
-  .state('app.goal', {
-    url: "/goal",
-    views: {
-			'menuContent': {
-				templateUrl: "templates/goal.html",
-				controller: 'GoalCtrl'
       }
     }
   });

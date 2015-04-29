@@ -49,44 +49,6 @@ if (num2.value == '') {
 	
 }) //end HomeCtrl
 
-// controller for settings page
-.controller('SettingsCtrl', function($scope, $localstorage) {
-	
-;
-
-	// function to update e
-	$scope.updateDetails = function(firstName,lastName,height,weight){  
-	  	// save users deatails
-		$scope.height= height;
-	  	$localstorage.setObject('height', $scope.height);
-		$scope.first= firstName;
-	  	$localstorage.setObject('first', $scope.first);
-		$scope.last= lastName;
-	  	$localstorage.setObject('last', $scope.last);
-		$scope.weights= weight;
-	  	$localstorage.setObject('weights', $scope.weights);
-        location.reload();
-	 }; // end updateDetails()
-$scope.$on("$ionicView.beforeLeave", function(){
-     
-	});
-}) //end SettingsCtrl
-// controller for Goal page
-.controller('GoalCtrl', function($scope, $localstorage) {
-	
-	
-
-	// function to update 
-	$scope.updateGoal = function(goal){  
-	  	// save users deatails
-		$scope.goalz= goal;
-	  	$localstorage.setObject('goalz', $scope.goalz);
-        location.reload();
-	 }; // end updateGoal()
-$scope.$on("$ionicView.beforeLeave", function(){
-     
-	});
-}); //end GoalCtrl
 
 
    	
