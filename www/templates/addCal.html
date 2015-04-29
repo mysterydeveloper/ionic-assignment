@@ -1,0 +1,19 @@
+<ion-view  view-title="ADD CALORIES">
+	<ion-content>
+		<div class="item item-divider" > 
+            <center>Greetings, {{first + " " + last}}.</center>
+		</div>
+        <center>
+  <div ng-controller="HomeCtrl">
+
+      <h1>TODAYS CALORIES: <input type="text" ng-model="num1=result" readonly></h1><br/>
+      <h1>ADD CALORIES:</h1> <input type="text"  placeholder="100" autofocus ng-model="num2" name="title">
+      <br /> <br />
+      <button class="button" ng-click="add(num1,num2)">
+        ADD CALORIES
+      </button>   
+        </div>
+        </center>
+
+	</ion-content>
+</ion-view>

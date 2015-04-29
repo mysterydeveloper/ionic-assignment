@@ -1,0 +1,21 @@
+<ion-view view-title="GOAL">
+	<ion-content style="background-color: white" >
+		<div class="item item-divider"> 
+          {{goal}}
+	  	</div>
+		
+		<div class="list">
+
+  			<label class="item item-input item-floating-label">
+    			<span class="input-label">Goal</span>
+    			<input type="text" placeholder="2000" ng-model="goal">
+  			</label>
+		</div>
+	  
+	 
+		<button class="button button-full button-positive" ng-click="updateGoal(goal)">
+			Update Details
+		</button>
+		
+	</ion-content>
+</ion-view>	

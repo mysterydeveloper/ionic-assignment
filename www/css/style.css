@@ -1,0 +1,21 @@
+/* Empty. Add your own CSS if you like */
+body {
+    background-color: red;
+	font: 15px arial, sans-serif;
+}
+
+h1 {
+    color:white;
+	font:  30px Georgia, serif;
+}
+
+input{
+    BACKGROUND-COLOR: white
+}
+ion-content{
+	background-color: red;
+}
+button{
+	color:black;
+	font:  30px Georgia, serif;
+}

@@ -1,0 +1,26 @@
+<ion-view  view-title="Home">
+	<ion-content style="BACKGROUND-COLOR: red" >
+		<div class="item item-divider" > 
+            	<center>Greetings, {{first + " " + last}}.</center>
+		</div>
+        <center>
+  <div ng-controller="HomeCtrl">
+	  <br /> <br/>
+      <center ><H1>YOUR STATS TODAY</H1></center>
+       
+       <h1 >TODAYS GOAL: {{goalz}}</h1> 
+       <h1 >TODAYS CALORIES: {{result}}</h1> 
+	  <h1 >CALORIES LEFT: {{ENDgoalz}}</h1> 
+
+      <h1 >YOUR HEIGHT: {{height}} FT</h1>
+      <h1 >YOUR WEIGHT: {{weights}} KG</h1>
+ 
+      
+      <button class="button" ng-click="reset()">
+        NEW DAY
+      </button>
+        
+        </div>
+</center>
+	</ion-content>
+</ion-view>
