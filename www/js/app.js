@@ -15,59 +15,32 @@ angular.module('Calorie Counter', ['ionic', 'Calorie Counter.controllers', 'Calo
 
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
-
+	
 	.state('app', {
-		url: "/app",
+		url: "/app",//setting the url
     	abstract: true,
-    	templateUrl: "templates/menu.html"
+    	templateUrl: "templates/menu.html"//setting the it can be found
 	})
 
 	.state('app.home', {
-		url: "/home",
+		url: "/home",//setting the url
 		views: {
 			'menuContent': {
-				templateUrl: "templates/home.html",
-				controller: 'HomeCtrl'
+				templateUrl: "templates/home.html",//setting the it can be found
+				controller: 'HomeCtrl'//setting the controler
 			}
 		}
 	})
-  .state('app.about', {
-    url: "/about",
-    views: {
-			'menuContent': {
-				templateUrl: "templates/about.html",
-				
-      }
-    }
-  })
   .state('app.settings', {
-    url: "/settings",
+    url: "/settings",//setting the url
     views: {
 			'menuContent': {
-				templateUrl: "templates/settings.html",
-				controller: 'SettingsCtrl'
-      }
-    }
-  })
-     .state('app.add', {
-    url: "/add",
-    views: {
-			'menuContent': {
-				templateUrl: "templates/addCal.html",
-				controller: 'HomeCtrl'
-      }
-    }
-  })
-  .state('app.goal', {
-    url: "/goal",
-    views: {
-			'menuContent': {
-				templateUrl: "templates/goal.html",
-				controller: 'GoalCtrl'
+				templateUrl: "templates/settings.html",//setting the it can be found
+				controller: 'SettingsCtrl'//setting the controler
       }
     }
   });
 	
 		// if none of the above states are matched, use this as the fallback
-		$urlRouterProvider.otherwise('/app/home');
+		$urlRouterProvider.otherwise('/app/home');//setting the defualt if none of them are picked
 });
