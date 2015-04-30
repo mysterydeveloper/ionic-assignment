@@ -1,11 +1,15 @@
+<!--HOME PAGE-->
 <ion-view  view-title="Home">
 	<ion-content style="BACKGROUND-COLOR: red" >
 		<div class="item item-divider" > 
+	<!--WELCOME MESSAGE FOR THE USER WITH THE FIRST AND LAST NAME WHICH CAN BE CHANGED IN SETTINGS-->
             	<center>Greetings, {{first + " " + last}}.</center>
 		</div>
         <center>
+ <!-- DEFINING THE CONTROLER NEEDED FOR THIS PAGE-->
   <div ng-controller="HomeCtrl">
 	  <br /> <br/>
+	  <!--STATS LISED BELOW-->
       <center ><H1>YOUR STATS TODAY</H1></center>
        
        <h1 >TODAYS GOAL: {{goalz}}</h1> 
@@ -15,7 +19,7 @@
       <h1 >YOUR HEIGHT: {{height}} FT</h1>
       <h1 >YOUR WEIGHT: {{weights}} KG</h1>
  
-      
+      <!--CAN BE CLICKED TO RESET THE RESULT TO 0 AS IN STARTING A NEW DAY FOR CALORIES AND RESET THE CALORIES LEFT TODAY-->
       <button class="button" ng-click="reset()">
         NEW DAY
       </button>

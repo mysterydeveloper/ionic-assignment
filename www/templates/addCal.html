@@ -1,9 +1,12 @@
+<!--ADD CALORIES PAGE-->
 <ion-view  view-title="ADD CALORIES">
 	<ion-content>
 		<div class="item item-divider" > 
+	<!--WELCOME MESSAGE FOR THE USER WITH THE FIRST AND LAST NAME WHICH CAN BE CHANGED IN SETTINGS-->
             <center>Greetings, {{first + " " + last}}.</center>
 		</div>
         <center>
+<!-- DEFINING THE CONTROLER NEEDED FOR THIS PAGE-->	        
   <div ng-controller="HomeCtrl">
 
       <h1>TODAYS CALORIES: <input type="text" ng-model="num1=result" readonly></h1><br/>

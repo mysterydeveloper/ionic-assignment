@@ -17,52 +17,52 @@ angular.module('Calorie Counter', ['ionic', 'Calorie Counter.controllers', 'Calo
 	$stateProvider
 
 	.state('app', {
-		url: "/app",
+		url: "/app",//SETING THE URL
     	abstract: true,
-    	templateUrl: "templates/menu.html"
+    	templateUrl: "templates/menu.html"//TELLING THE COMPUTER WHERE TO GO TO GET THE HTML PAGE
 	})
 
 	.state('app.home', {
-		url: "/home",
+		url: "/home",//SETING THE URL
 		views: {
 			'menuContent': {
-				templateUrl: "templates/home.html",
+				templateUrl: "templates/home.html",//TELLING THE COMPUTER WHERE TO GO TO GET THE HTML PAGE
 				controller: 'HomeCtrl'
 			}
 		}
 	})
   .state('app.about', {
-    url: "/about",
+    url: "/about",//SETING THE URL
     views: {
 			'menuContent': {
-				templateUrl: "templates/about.html",
+				templateUrl: "templates/about.html",//TELLING THE COMPUTER WHERE TO GO TO GET THE HTML PAGE
 				
       }
     }
   })
   .state('app.settings', {
-    url: "/settings",
+    url: "/settings",//SETING THE URL
     views: {
 			'menuContent': {
-				templateUrl: "templates/settings.html",
+				templateUrl: "templates/settings.html",//TELLING THE COMPUTER WHERE TO GO TO GET THE HTML PAGE
 				controller: 'SettingsCtrl'
       }
     }
   })
      .state('app.add', {
-    url: "/add",
+    url: "/add",//SETING THE URL
     views: {
 			'menuContent': {
-				templateUrl: "templates/addCal.html",
+				templateUrl: "templates/addCal.html",//TELLING THE COMPUTER WHERE TO GO TO GET THE HTML PAGE
 				controller: 'HomeCtrl'
       }
     }
   })
   .state('app.goal', {
-    url: "/goal",
+    url: "/goal",//SETING THE URL
     views: {
 			'menuContent': {
-				templateUrl: "templates/goal.html",
+				templateUrl: "templates/goal.html",//TELLING THE COMPUTER WHERE TO GO TO GET THE HTML PAGE
 				controller: 'GoalCtrl'
       }
     }

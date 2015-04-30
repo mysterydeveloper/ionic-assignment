@@ -1,21 +1,26 @@
+<!--GOAL PAGE-->
 <ion-view view-title="GOAL">
+	<!-- DEFINING THE CONTROLER NEEDED FOR THIS PAGE-->	       
+  <div ng-controller="GoalCtrl">
+<!-- setting the background colour so it can be easily seen-->	        
+
 	<ion-content style="background-color: white" >
 		<div class="item item-divider"> 
           {{goal}}
 	  	</div>
 		
 		<div class="list">
-
+<!-- INPUT FOR THE GOAL-->	        
   			<label class="item item-input item-floating-label">
     			<span class="input-label">Goal</span>
     			<input type="text" placeholder="2000" ng-model="goal">
   			</label>
 		</div>
 	  
-	 
+		<!-- UPDATE THE GOAL CALORIES FOR TODAY-->	        
 		<button class="button button-full button-positive" ng-click="updateGoal(goal)">
 			Update Details
 		</button>
-		
+	</div>	
 	</ion-content>
 </ion-view>	

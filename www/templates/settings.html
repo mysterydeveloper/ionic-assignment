@@ -1,34 +1,39 @@
+<!--SETTING PAGE -->
 <ion-view view-title="Settings">
 	<ion-content style="background-color: white" >
 		<div class="item item-divider"> 
           Name: {{firstName + " " + lastName + " " + height+"ft" + " " + weight + "kg"}}
 	  	</div>
+<!-- DEFINING THE CONTROLER NEEDED FOR THIS PAGE-->	        
+  <div ng-controller="SettingsCtrl">
 		
 		<div class="list">
-
+			<!--INPUT FOR FIRST NAME WITH PLACEHOLDER -->
   			<label class="item item-input item-floating-label">
     			<span class="input-label">First Name</span>
     			<input type="text" placeholder="First Name" ng-model="firstName">
   			</label>
-			
+			<!--INPUT FOR LAST NAME WITH PLACEHOLDER -->
   			<label class="item item-input item-floating-label" >
     			<span class="input-label">Last Name</span>
     			<input type="text" placeholder="Last Name" ng-model="lastName">
   			</label>
+			<!--INPUT FOR HEIGHT WITH PLACEHOLDER -->
             		<label class="item item-input item-floating-label" >
     			<span class="input-label">Height in feet</span>
     			<input type="tel" placeholder="Height in feet" ng-model="height">
   			</label>
+			<!--INPUT FOR WEIGHT WITH PLACEHOLDER -->
 		    	<label class="item item-input item-floating-label" >
     			<span class="input-label">Weight in Kgs</span>
     			<input type="tel" placeholder="Weight in Kgs " ng-model="weight">
   			</label>
 		</div>
 	  
-	 
+	 <!--UPDATE THE DETAILS -->
 		<button class="button button-full button-positive" ng-click="updateDetails(firstName,lastName,height,weight)">
 			Update Details
 		</button>
-		
+</div>	
 	</ion-content>
 </ion-view>	
